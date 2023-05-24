@@ -1,11 +1,21 @@
-/* Globala stilar */
+
 body,
 h1,
 h2,
-h3 {
+h3,
+ul,
+ol,
+li {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 ul {
@@ -14,7 +24,14 @@ ul {
     padding: 0;
 }
 
-/* Header-stilar */
+ol {
+    margin: 0;
+}
+
+h2,h3{
+    margin: 10px;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -43,10 +60,7 @@ nav a:hover {
 footer {
     display: flex;
     justify-content: center;
-}
-/* Main-stilar */
-main {
-    margin: 20px;
+    background-color: grey;
 }
 
 h2 {
@@ -60,8 +74,10 @@ h2 {
     border-radius: 5px;
     overflow: hidden;
     width: 300px;
+    height: 275px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s;
+    text-align: center;
 }
 
 .recipe img {
@@ -79,22 +95,6 @@ h2 {
     font-size: 14px;
 }
 
-.recipe button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.recipe button:hover {
-    background-color: #3e8e41;
-}
 
 .recipe:hover {
     transform: scale(1.1);
@@ -128,4 +128,54 @@ h2 {
         width: 90%;
         margin: 20px 0;
     }
+}
+
+.recept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rebild{
+    grid-column: 2 / 3;
+}
+
+.reing{
+    grid-column: 1 / 2;
+    font-size: larger;
+}
+
+.regör{
+    grid-column: 2 / 3;
+    font-size: larger;
+}
+
+.ma {
+    background-image: url(maranger.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.regör li {
+    margin-bottom: 50px;
+}
+
+.paca{
+    background-image: url(pasta-carbonara.jpg);
+    height: 500px;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    background-position: 0 -300px;
+}
+
+.paal{
+    background-image: url(pasta-alfredo.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.kontakt, .chef{
+    margin: 20px;
 }
