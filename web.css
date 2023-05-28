@@ -133,16 +133,32 @@ h2 {
 .recept{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .rebild{
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .reing{
     grid-column: 1 / 2;
     font-size: larger;
 }
+
+.reing ul{
+    margin: 20px;
+}
+
+.reinfo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    margin: 20px;
+    font-size: x-large;
+    line-height: 35px;
+}
+
 
 .regör{
     grid-column: 2 / 3;
@@ -176,6 +192,6 @@ h2 {
 }
 
 
-.kontakt, .chef{
+.kontakt, .chef {
     margin: 20px;
-}
+} 
